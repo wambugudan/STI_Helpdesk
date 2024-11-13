@@ -154,19 +154,19 @@ const MainCard = ({ submissions, path }: DataProps) => {
             <div className="mx-3 mb-3 px-2 text-base text-slate-700 line-clamp-3"></div>
 
             <div className="mx-3 flex justify-start px-2">
-              <button
-                type="button"
-                className="mr-2 mb-2 rounded-full border border-slate-200 bg-gray-100 py-[6px] px-5 text-sm text-slate-600 hover:bg-slate-100 hover:text-blue-800"
-              >
-                {feed.area_of_expertise}
-              </button>
-
               {/* <button
                 type="button"
                 className="mr-2 mb-2 rounded-full border border-slate-200 bg-gray-100 py-[6px] px-5 text-sm text-slate-600 hover:bg-slate-100 hover:text-blue-800"
               >
-                {feed.sector_focus}
+                {feed.area_of_expertise}
               </button> */}
+
+              <button
+                type="button"
+                className="mr-2 mb-2 rounded-full border border-slate-200 bg-gray-100 py-[6px] px-5 text-sm text-slate-600 hover:bg-slate-100 hover:text-blue-800"
+              >
+                {feed.sector_focus}
+              </button>
 
               {/* {feed.area_of_expertise?.map((item) => (
               <button
