@@ -1,6 +1,6 @@
 // import { getAuth } from "firebase/auth";
 import { useUser } from "@clerk/nextjs";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import React from "react";
 
 import MainCard from "@/components/cards/submissions/MainCard";
@@ -11,7 +11,7 @@ import CardSkeleton from "../utils/CardSkeleton";
 
 const AllProjects = () => {
   const { user } = useUser();
-  const router = useRouter();
+  // const router = useRouter();
   // console.log(router, "router");
   // console.log(user, "user");
   const { projectMatched, isLoading, isError } = useMatchedSubmissions(
