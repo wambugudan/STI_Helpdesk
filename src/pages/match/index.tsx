@@ -20,10 +20,13 @@ const Index = () => {
   const router = useRouter();
   const { user } = useUser();
   const [researcherId, setResearcherId] = useState("");
-  const [researcher, setResearcher] = useState<any>(null);
-  const [isResearcherLoading, setIsResearcherLoading] =
-    useState<boolean>(false);
-  const [researcherError, setResearcherError] = useState<string | null>(null);
+  // const [researcher, setResearcher] = useState<any>(null);
+  // const [isResearcherLoading, setIsResearcherLoading] =
+  //   useState<boolean>(false);
+  // const [researcherError, setResearcherError] = useState<string | null>(null);
+  const [, setResearcher] = useState<any>(null);
+  const [, setIsResearcherLoading] = useState<boolean>(false);
+  const [, setResearcherError] = useState<string | null>(null);
 
   // console.log(user, router, "user");
 
