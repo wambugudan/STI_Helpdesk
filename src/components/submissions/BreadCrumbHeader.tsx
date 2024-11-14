@@ -88,7 +88,7 @@ const BreadCrumbHeader = ({
             ""
           ) : (
             <LightButton
-              link={lightButtonLink}
+              link={lightButtonLink ?? ""}
               title={lightButtonTitle}
               width="w-full"
               name={lightButtonIcon}
