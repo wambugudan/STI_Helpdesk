@@ -30,7 +30,7 @@ const OverviewCard = ({ getDone }: any) => {
     maxFiles: 5,
     allowMultiple: true,
     server: {
-      process: (fieldName, file, metadata, progress) => {
+      process: (_fieldName, file, _metadata, progress) => {
         return new Promise((resolve, reject) => {
           setIsUploading(true);
           const storageRef = ref(storage, `/documents/${file.name}`);
