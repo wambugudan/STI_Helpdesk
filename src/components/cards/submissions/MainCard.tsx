@@ -7,6 +7,12 @@ interface DataProps {
   path: string;
 }
 
+interface Submission {
+  timestamp?: {
+    seconds?: number;
+  };
+}
+
 const MainCard = ({ submissions, path }: DataProps) => {
   // console.log(submissions, "submissions");
   const router = useRouter();
@@ -33,7 +39,7 @@ const MainCard = ({ submissions, path }: DataProps) => {
     <div>
       {submissions?.data
         ?.slice()
-        .sort((a, b) => {
+        .sort((a: Submission, b: Submission) => {
           // Safely access the timestamp and provide a fallback value of 0
           const timestampA = a.timestamp?.seconds ?? 0;
           const timestampB = b.timestamp?.seconds ?? 0;
