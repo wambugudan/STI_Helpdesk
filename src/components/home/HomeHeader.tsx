@@ -6,7 +6,7 @@ import img from "public/assets/images/acts-logo.png";
 const HomeHeader = () => {
   const { user } = useUser();
 
-  console.log({ user });
+  // console.log({ user });
   return (
     <div>
       <header className="flex w-full justify-center">
