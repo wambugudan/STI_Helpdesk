@@ -47,7 +47,6 @@ const DescriptionCard = ({ details }: DataProps) => {
       }
     }
   }
-  
   if (currentParagraph.length > 0) {
     paragraphs.push(currentParagraph.trim());
   }
