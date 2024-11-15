@@ -168,6 +168,7 @@ export default function SignIn({ code }: Props) {
             <button
               type="submit"
               className={
+                // eslint-disable-next-line no-nested-ternary
                 isToggledOn ? (submitted ? newLocal : newLocal2) : newLocal
               }
               disabled={!isToggledOn}
