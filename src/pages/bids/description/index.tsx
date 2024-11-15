@@ -27,14 +27,14 @@ const Index = () => {
   // console.log(bidDetails, "bidDetails");
   const updateMatch = async () => {
     if (!router.isReady) {
-      console.warn("Router not ready yet");
+      // console.warn("Router not ready yet");
       return;
     }
 
     const projectId = router?.query?.project_id?.toString();
 
     if (typeof projectId !== "string") {
-      console.error("Invalid project ID");
+      // console.error("Invalid project ID");
       return;
     }
 
