@@ -48,7 +48,7 @@ const TopNavBar = ({ currentTab }: Props) => {
   return (
     <Disclosure as="nav" className={`px-10`}>
       <>
-        <div className="mx-auto sm:px-6 sm:py-2 lg:px-0">
+        <div className="mx-auto sm:px-6 sm:py-2 lg:px-6">
           <div className="relative flex h-14 items-center justify-between lg:h-10">
             <div className="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
               <div className="flex shrink-0 items-center">
@@ -92,11 +92,11 @@ const TopNavBar = ({ currentTab }: Props) => {
                 <div className="flex flex-col gap-6 truncate font-medium tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
                   {user?.unsafeMetadata.data === "expert" ? (
                     <div className="hidden rounded-full bg-orange-200/50 px-4 py-1.5 text-orange-600 transition lg:block lg:text-xs">
-                      <span>You&apos;re signed in as an Expert</span>
+                      <span>User Type: Expert</span>
                     </div>
                   ) : (
                     <div className="hidden rounded-full bg-indigo-200/50 px-4 py-1.5 text-indigo-600 transition lg:block lg:text-xs">
-                      <span>You&apos;re signed in as a Council Member</span>
+                      <span>User Type: Council Member</span>
                     </div>
                   )}
                 </div>
