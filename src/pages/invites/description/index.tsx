@@ -27,7 +27,7 @@ const Index = () => {
     const projectId = router.query.project_id?.toString();
 
     if (!projectId) {
-      console.error("No valid project ID found");
+      // console.error("No valid project ID found");
       return; // Exit if projectId is missing or invalid
     }
     const referenceData = doc(
